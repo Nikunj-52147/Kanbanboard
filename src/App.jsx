@@ -5,6 +5,7 @@ import { FiPlus, FiTrash } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const App = () => {
+  console.log('pixel raito',window.devicePixelRatio)
   return (
     <div className="h-screen  w-full bg-neutral-900 text-neutral-50">
       <Board />
@@ -27,7 +28,7 @@ const Board = () => {
   }, []);
 
   return (
-    <div className="flex h-full w-full gap-3 overflow-scroll p-12">
+    <div className="flex h-full w-full gap-3 p-12">
       <Column
         title="Backlog"
         column="backlog"
